@@ -17,3 +17,10 @@ puts my_hash
 
 
 #_______________________
+
+
+arr2 = ["a", "b", "c", "d"]
+
+hash1 = arr2.to_h{ |key| [key, rand(4)]}
+
+puts hash1
