@@ -1,8 +1,9 @@
 puts "Сколько чисел вы хотите просуммировать?"
 
-user = gets.chomp.to_i
+user = nil
 
 loop do
+  user = gets.chomp.to_i
   if user > 0
     print "Нужно просуммировать #{user} "
     if user == 1 || ((user % 10) == 1 && user > 20)
@@ -14,7 +15,7 @@ loop do
     end
     break
   else
-    puts "Введите число больще нуля!"
+    puts "Введите число больше нуля!"
   end
 end
 
